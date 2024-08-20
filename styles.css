@@ -54,18 +54,22 @@ body {
 }
 
 /* Estilos para Pantallas Grandes */
-@media (min-width: 375px) and (max-width: 1440px){
+@media (min-width: 376px) and (max-width: 1920px){
+    .main-container {
+        max-width: 30rem;
+        margin: auto;
+    }
     .qr-card {
-        max-width: 17rem;
-        padding: 1rem;
+        max-width: 30rem;
+        padding: 1.5rem;
     }
 
     .qr-card__title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .qr-card__description {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 }
 
