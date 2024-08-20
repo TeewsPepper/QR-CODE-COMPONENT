@@ -1,0 +1,70 @@
+
+
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --slate-primary: hsl(212, 45%, 89%);
+    --slate-secondary: hsl(216, 15%, 48%);
+    --slate-dark: hsl(218, 44%, 22%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--slate-primary);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/* Estilos del Componente QR Card */
+.qr-card {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 17rem;
+}
+
+.qr-card__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.qr-card__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    color: var(--slate-dark);
+}
+
+.qr-card__description {
+    font-size: .9rem;
+    color: var(--slate-secondary);
+}
+
+/* Estilos para Pantallas Grandes */
+@media (min-width: 375px) and (max-width: 1440px){
+    .qr-card {
+        max-width: 17rem;
+        padding: 1rem;
+    }
+
+    .qr-card__title {
+        font-size: 1.5rem;
+    }
+
+    .qr-card__description {
+        font-size: 1rem;
+    }
+}
+
+
